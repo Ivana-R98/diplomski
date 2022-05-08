@@ -1,0 +1,168 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Trebuchet MS";
+    background: linear-gradient(90deg, #7dcfff, #fab8ff)
+  }
+  /* header */
+header {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    background: linear-gradient(30deg, #7dcfff, #fab8ff);
+    align-items: center;
+    min-height: 70px;
+}
+header img {
+    padding-left: 3%;
+}
+nav {
+    width: 45%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 2 auto;
+}
+li {
+    list-style-type: none;
+}
+nav a {
+    background-color: #fde6ff;
+    text-decoration: none;
+    color: #f797f4;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem;
+}
+/* main */
+  main {
+    width:60%;
+    margin: auto;
+    padding: 1em 2em;
+    border-radius: 1%;
+    font-size: 1.1em;
+  }
+  #cats {
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  #birds {
+    width: 13%;
+    position: fixed;
+    left: 6px;
+    top: 70px;
+  }
+  h1 { 
+    font-family: "Comic Sans MS";
+    text-align: center; 
+    font-size: 2.1em;
+  }
+  #description { 
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95em;
+    font-family: "Comic Sans MS";
+    padding: 6px;
+  }
+  article {
+    background: linear-gradient(-135deg, #52e8ff, #f797f4);
+    padding: 2em 20%;
+    border-radius: 50px;
+  }
+  #name{
+    width: 90%;
+    height: 2em;
+    margin: 5px 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 0.25em solid #fde6ff;
+  }
+  #name:focus {
+    background-color: #fde6ff;
+    border: 0.3em solid #96faff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  #email{
+    width: 90%;
+    height: 2em;
+    margin: 5px 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 0.25em solid #fde6ff;
+  }
+  #email:focus {
+    background-color: #fde6ff;
+    border: 0.3em solid #96faff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  #dropdown {
+    background-color:#96faff;
+    border: 0.25em solid white;
+    height: 2em;
+    width: 150px;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+  #dropdown:focus {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-color: #f797f4;
+  }
+  #number {
+    background-color:#96faff;
+    border: 0.25em solid white;
+    height: 1.5em;
+    width: 50%;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  #number:focus {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-color: #f797f4;
+  }
+  .pets {
+    margin: 5px;
+  }
+  textarea {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    border: 0.3em solid #fde6ff;
+    font-family:"Trebuchet MS";
+  }
+  textarea:focus {
+     border-color: #f797f4;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  button {
+    border-radius: 10px;
+    border: 0.3em solid #fde6ff;
+    background-color: #96faff;
+    height: 2.3em;
+    width: 6em;
+    font-size: 1.05em;
+    font-family:"Trebuchet MS";
+  }
+  button:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-color: #f797f4;
+    background-color: #52e8ff;
+  }
+  /*
+  For phones and similar media
+  */
+  @media (max-width:768px) {
+    main { width: 80%; }
+    h1 { font-size: 1.8em; }
+    header p { font-size: 0.8em; }
+    article { padding: 2em 5%;
+      border-radius: 30px; }
+    #cats { width: 10%; }
+    #birds { width: 10%; }
+  }
+  
