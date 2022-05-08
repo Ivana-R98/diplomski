@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 70px 70px 1fr 30px;
+    align-content: space-between;
+    gap: 4px;
+}
+
+/* header */
+header {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    background-color: aliceblue;
+    align-items: center;
+    min-height: 70px;
+}
+header img {
+    padding-left: 5%;
+}
+nav {
+    width: 40%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 2 auto;
+}
+li {
+    list-style-type: none;
+}
+nav a {
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: violet;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem;
+}
+
+h1 {
+    text-align: center; 
+    font-size: 36px;
+    background-color: antiquewhite;
+    color: violet;
+    padding: 8px;
+    height: 50px;
+}
+
+/* main */
+main {
+    display: flex;
+    flex: 1 1 auto;
+}
+section {
+    background-color: aquamarine;
+    margin: 0 6px;
+    padding: 0 6px;
+}
+section > p {
+    box-sizing: border-box;
+    padding: 12px;
+    height: 200px;
+}
+section img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    color:cornsilk;
+    font-size: 1.1rem;
+    background-color:coral;
+    align-self: stretch;
+}
+/* responsive site laptops and tablets*/
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-rows: minmax(100px 1fr) minmax(60px 1fr) auto minmax(30px 1fr);
+    }
+    nav {
+        width: 50%;
+    }  
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+    section > p {
+        height: fit-content;
+    }
+}
+
+/* responsive site phones and small tablets */
+@media screen and (max-width: 768px) {
+ 
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+    h1 {
+        font-size: 24px;
+        height: 28px;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    section {
+        margin-bottom: 6px;
+    }
+}
