@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/dstyle.css">
+    <link rel="stylesheet" href="./css/indexstyle.css">
     <title>Doniraj, form</title>
 </head>
 <body>
@@ -12,68 +13,57 @@
         <img src="https://via.placeholder.com/55x55?text=logo" alt="logo">
         <nav>
             <ul>
-                <li><a href="./o_nama.html">O nama</a></li>
-                <li><a href="./usvoji.html">Usvojite</a></li>
-                <li><a href="./doniraj.html">Donirajte</a></li>
-                <li><a href="./radionica.html">Kućice</a></li>
+              <li><a href="./index.html">Pocetna</a></li>
+              <li><a href="./kontakt.html">Kontakt</a></li>
+              <li><a href="./usvoji.html">Usvojite</a></li>
+              <li><a href="./radionica.html">Kućice</a></li>
             </ul>
         </nav>
     </header>
+    <h1 id="title">Pomozite nam da pomognemo njima</h1> 
     <main>
-        <h1 id="title">Pet Survey Form</h1>  
-        <p id="description">Thank you for taking the time to help us learn about people and their pets</p>
-        <img src="https://freepngimg.com/thumb/cat/145619-vector-black-cat-free-transparent-image-hd.png" alt="" id="cats">
-        <img src="https://www.pinclipart.com/picdir/big/555-5553469_clip-art-birdwatching-royalty-free-vector-graphics-vector.png" id="birds" alt="bird">
-            <article>
-              <form id="survey-form" action="#">
-                <!--first part of the survey, name and email -->
-                <label for="name" id="name-label">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder=" Please enter your name" required><br><br>
-                <label for="email" id="email-label">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder=" Please enter your e-mail" required><br><br>
-                <!--Dropdown for places to live-->
-                <label for="dropdown" id="dropdown-label">Where do you live?</label>
-                <select name="living" id="dropdown">
-                  <option value="house">House</option>
-                  <option value="apartment">Apartment</option>
-                  <option value="other">Somewhere else</option>
-                  </select><br><br>
-                <!--How many pets-->
-                <label for="number" id="number-label">Number of pets 
-                  <span>(if you have any):</span></label><br>
-                <input id="number" type="number" name="number" placeholder="Pets owned" min="0" max="10"><br><br>
-                  <!--if not, would u like-->
-                <div id="radio-grp">
-                  <p>If you don't have a pet, would you like one?</p>
-                <input type="radio" name="pet" id="yes" value="yes" checked>
-                  <label for="yes">Yes</label>
-                  <input type="radio" name="pet" id="no" value="no">
-                  <label for="no">No</label>
-                </div><br>
-                  <!--Checkboxes for types of pets-->
-                <div id="check-grp">
-                  <p>What pets do you have?</p>
-                 <input class="pets" type="checkbox" name="pets" id="dog" value="dog">
-                  <label for="dog">Dogs</label><br>
-                  <input class="pets" type="checkbox" name="pets" id="cat" value="cat">
-                  <label for="cat">Cats</label><br>
-                  <input class="pets" type="checkbox" name="pets" id="bird" value="bird">
-                  <label for="bird">Birds</label><br>
-                  <input class="pets" type="checkbox" name="pets" id="mouse" value="mouse">
-                  <label for="mouse">Hamsters (mice)</label><br>
-                  <input  class="pets" type="checkbox" name="pets" id="rabbit" value="rabbit">
-                  <label for="rabbit">Rabbits</label><br>
-                  <input class="pets" type="checkbox" name="pets" id="other" value="other">
-                  <label for="other">Other</label><br>
-                </div><br><br>
-                <!--textarea for additional info-->
-                <div id="comments">
-                  <label for="comments">If you would like to add anything:</label><br>
-                  <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
-                </div><br><br>
-                <button id="submit">Submit</button>
-              </form>
+      <article>
+              <div class="container p-0">
+                <div class="card px-4">
+                    <p class="h8 py-3">Detalji placanja</p>
+                    <div class="row gx-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">Ime i prezime</p>
+                                <input class="form-control mb-3" type="text" placeholder="Petar Peric" >
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">Kreditna kartica</p>
+                                <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">Istek</p>
+                                <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column">
+                                <p class="text mb-1">CVV/CVC</p>
+                                <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn btn-primary mb-3">
+                                <span class="ps-3">Doniraj</span>
+                                <span class="fas fa-arrow-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </article>
       </main>
+      <footer>
+        <p>just footer things</p>
+    </footer>
 </body>
 </html>

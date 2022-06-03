@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+h2, body > p {
+    text-align: center;
+}
+
+.container {
+    margin: 1rem 0;
+    align-self: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.grp img {
+    width: 300px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+}

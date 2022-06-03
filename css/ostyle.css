@@ -1,0 +1,131 @@
+body {
+    font-family: "Trebuchet MS";
+    background: #7dcfff;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 4px;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 60%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+  }
+  #name{
+    width: 250px;
+    height: 2em;
+    margin: 5px 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 0.25em solid #fde6ff;
+  }
+  #name:focus {
+    background-color: #fde6ff;
+    border: 0.3em solid #96faff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  #email{
+    width: 250px;
+    height: 2em;
+    margin: 5px 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 0.25em solid #fde6ff;
+  }
+  #email:focus {
+    background-color: #fde6ff;
+    border: 0.3em solid #96faff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  textarea {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    border: 0.3em solid #fde6ff;
+    font-family:"Trebuchet MS";
+  }
+  textarea:focus {
+     border-color: #f797f4;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  button {
+    border-radius: 10px;
+    border: 0.3em solid #fde6ff;
+    background-color: #96faff;
+    height: 2.3em;
+    width: 6em;
+    font-size: 1.05em;
+    font-family:"Trebuchet MS";
+  }
+  button:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-color: #f797f4;
+    background-color: #52e8ff;
+  }
+
+.myinfo > div {
+    margin: 1.2rem 0;
+}
+article {
+    width: 70%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 2rem;
+}
+article img {
+    border-radius: 50%;
+    grid-area: 1/1/3/2;
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+article h2 {
+    text-align: center;
+    padding: 8px;
+}
+
+footer {
+  align-self: flex-end;
+}
+
+
+  /*
+  For phones and similar media
+  */
+  @media (max-width:768px) {
+    main { width: 80%; }
+  }
+
+  /* responsive site laptops and tablets*/
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+}
+}
+
+/* responsive site phones and small tablets */
+@media screen and (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    article img, article p, h2 {
+        margin: 1rem auto;
+    }
+}
+/* fon */
+@media screen and (max-width: 480px) { 
+    textarea {
+        width: 250px;
+      }
+}
