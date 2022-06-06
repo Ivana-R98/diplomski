@@ -16,7 +16,7 @@ h2, body > p {
     gap: 1.5rem;
     justify-content: center;
 }
-.grp img {
+.container img {
     width: 300px;
     height: 250px;
 }
