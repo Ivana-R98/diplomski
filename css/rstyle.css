@@ -20,9 +20,38 @@ h2, body > p {
     width: 300px;
     height: 250px;
 }
+.uradi {
+    width: 60%; 
+    margin: auto; 
+    margin-bottom: 2.1rem;
+}
+.para {
+    border: 8px #ff9f10 groove;
+    margin: 4px;
+}
+.para > * {
+    margin: 4px 8px 4px 16px;
+}
+.para li {
+    list-style-position: inside;
+}
+.para li:last-child {
+    margin-bottom: 8px;
+}
+.para h3 {
+    margin-left: 6px;
+}
 
 @media screen and (max-width: 1024px) {
     .container {
+        width: 95%;
+    }
+    .uradi {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 440px) {
+    .uradi {
         width: 95%;
     }
 }

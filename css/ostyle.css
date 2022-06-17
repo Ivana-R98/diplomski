@@ -63,7 +63,7 @@ main {
     margin: 1.2rem 0;
 }
 article {
-    width: 70%;
+    width: 60%;
     margin: 3rem auto;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -101,7 +101,10 @@ footer {
 @media screen and (max-width: 1024px) {
   main {
     flex-direction: column;
-}
+  }
+  article {
+    width: 70%;
+  }
 }
 
 /* responsive site phones and small tablets */

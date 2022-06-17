@@ -1,10 +1,26 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template-rows: 80px 100px 1fr 30px;
+    grid-template-rows: 80px 130px 1fr 30px;
     gap: 4px;
 }
-
+#upitnik {
+    font-size: 1.6em;
+    color: #ffe6b7;
+    text-decoration: none;
+    background-color: #5c3b09;
+    padding: 8px 20px;
+    border-radius: 45%;  
+    transition: 0.5s;
+}
+#upitnik:hover {
+    color: #5c3b09;
+    background-color: #ffe6b7;
+    padding: 12px 24px;
+}
+.naslov p {
+    margin-bottom: 12px;
+}
 /* main */
 main {
     display: grid;
@@ -28,7 +44,14 @@ section img {
 /* responsive site laptops and tablets*/
 @media screen and (max-width: 1024px) {
     body {
-        grid-template-rows: 80px 100px auto 30px;
+        grid-template-rows: 80px 120px auto 30px;
+    }
+    .naslov p {
+        margin-bottom: 6px;
+    }
+    #upitnik {
+        padding: 5px 10px;
+        font-size: 1.2rem;
     }
     section > p {
         height: fit-content;
@@ -41,8 +64,12 @@ section img {
 
 /* responsive site phones and small tablets */
 @media screen and (max-width: 768px) {
+    body {
+        grid-template-rows: 80px 100px auto 30px;
+    }
     h1 {
         font-size: 24px;
         height: 28px;
-    }   
+    }  
+
 }

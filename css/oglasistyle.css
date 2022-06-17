@@ -1,0 +1,32 @@
+main {
+    width: 80%;
+    margin: auto;
+    color: #5c3b09;
+    margin-bottom: 2rem;
+}
+section {
+    width: 90%;
+    margin: auto;
+}
+h2 {
+    border-bottom: 6px groove #f19409; 
+    margin-bottom: 0.7rem; 
+    text-align: center; 
+}
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.grp {
+    max-width: 300px;
+}
+.grp img {
+    display: block;
+    height: 300px;
+    margin: auto;
+}
+h3 {
+    text-align: center;
+}
