@@ -71,5 +71,18 @@ section img {
         font-size: 24px;
         height: 28px;
     }  
-
+    #cats {
+        margin-bottom: 3rem;
+    }  
 }
+@media screen and (min-width:425px) and (max-width: 768px) {
+    #cats {
+        margin-bottom: 4.5rem;
+    }   
+}
+@media screen and (min-width:300px) and (max-width:425px) {
+    #cats {
+        margin-bottom: 9.5rem;
+    }   
+}
+

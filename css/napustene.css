@@ -35,3 +35,13 @@ main p {
         width: 85%;
     }
 }
+@media screen and (min-width:381px) and (max-width: 768px) {
+    .nazad {
+      margin-bottom: 5rem !important;
+    }   
+  }
+  @media screen and (min-width:300px) and (max-width:380px) {
+    .nazad {
+      margin-bottom: 10rem !important;
+    }   
+  }

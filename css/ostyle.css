@@ -64,7 +64,7 @@ main {
 }
 article {
     width: 60%;
-    margin: 3rem auto;
+    margin: 5rem auto;
     display: grid;
     grid-template-columns: 200px 1fr;
     column-gap: 2rem;
@@ -80,9 +80,6 @@ article img {
 article h2 {
     text-align: center;
     padding: 8px;
-}
-.textcontainer {
-  margin-bottom: 3rem;
 }
 
 footer {
@@ -126,4 +123,19 @@ footer {
     textarea {
         width: 250px;
       }
+}
+@media screen and (max-width: 768px) {
+  .textcontainer {
+    margin-bottom: 3rem;
+  }  
+}
+@media screen and (min-width:300px) and (max-width: 768px) {
+  .textcontainer {
+    margin-bottom: 4.5rem;
+  }   
+}
+@media screen and (min-width:300px) and (max-width:425px) {
+  .textcontainer {
+    margin-bottom: 9rem;
+  }   
 }
