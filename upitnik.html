@@ -18,20 +18,20 @@
               <form id="survey-form" action="#">
                 <!--first part of the survey, name and email -->
                 <label for="name" id="name-label">Ime:</label><br>
-                <input type="text" id="name" name="name" placeholder=" Please enter your name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Petar Peric" required><br><br>
                 <label for="email" id="email-label">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder=" Please enter your e-mail" required><br><br>
+                <input type="email" id="email" name="email" placeholder="petarperic@gmail.com" required><br><br>
                 <!--Dropdown for places to live-->
                 <label for="dropdown" id="dropdown-label">Gde živite?</label>
                 <select name="living" id="dropdown">
-                  <option value="house">Kuća</option>
+                  <option value="house" selected>Kuća</option>
                   <option value="apartment">Stan</option>
                   <option value="other">Ostalo</option>
                   </select><br><br>
                 <!--How many pets-->
                 <label for="number" id="number-label">Broj kućnih ljubimaca 
                   <span>(ako ih imate):</span></label><br>
-                <input id="number" type="number" name="number" placeholder="broj" min="0" max="10"><br><br>
+                <input id="number" type="number" name="number" value="2" min="0" max="10"><br><br>
                   <!--if not, would u like-->
                 <div id="radio-grp">
                   <p>Ako nemate ljubimce, da li bi ste ih želeli?</p>

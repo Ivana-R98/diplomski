@@ -123,11 +123,19 @@ article {
     font-size: 1.2rem;
 }
 
+@media (min-width:1024px) and (max-width: 1448px) {
+    .hero {
+        height: 50vh;
+    }
+}
+
 /* hero 1024px */
 @media (max-width: 1024px) {
     .hero {
+        height: 80vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../cat.jpg");
     }
+
     .hero p {
         font-size: 1.5rem;
         color: #fff;

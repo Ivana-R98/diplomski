@@ -37,9 +37,18 @@ body {
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
+.grp {
+    width: 300px;
+}
 .usvoji img {
     height: 250px;
     max-width: 300px;
+    display: block;
+    margin: auto;
+}
+.grp p {
+    width: 80%;
+    margin: auto;
 }
 h2 {
     font-size: 1.5rem;
