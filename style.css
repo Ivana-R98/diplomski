@@ -25,7 +25,6 @@ section {
 section > p {
     box-sizing: border-box;
     padding: 12px;
-    height: 200px;
 }
 section img {
     display: block;
